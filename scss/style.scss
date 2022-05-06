@@ -1,9 +1,26 @@
-@use 'utils';
+@use 'utils' as *;
 
 
-body{
+body{display: flex;
+    align-items: center;
     height: 100vh;
+    background: linear-gradient(to right, #fc466b, #3f5efb);
 }
 .container {
-    background: rgb(255, 119, 95);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to left, #f58a9f, #899bf5);
+}
+
+.figure{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-row: auto;
+    gap: rem(20);
+    overflow: hidden;
+&__item{
+    display: flex;
+    align-items: center;
+}
 }

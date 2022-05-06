@@ -6,9 +6,41 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#fc466b), to(#3f5efb));
+  background: linear-gradient(to right, #fc466b, #3f5efb);
 }
 
 .container {
-  background: rgb(255, 119, 95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#f58a9f), to(#899bf5));
+  background: linear-gradient(to left, #f58a9f, #899bf5);
+}
+
+.figure {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-row: auto;
+  gap: 1.25rem;
+  overflow: hidden;
+}
+.figure__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=style.css.map */

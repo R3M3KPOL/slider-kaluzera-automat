@@ -1,0 +1,6 @@
+$width-container:100%;
+$elements-displayed:4;
+$elements-width: calc($width-container / $elements-displayed);
+
+@warn #{$elements-width};
+@debug $elements-displayed
