@@ -3,4 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}/*# sourceMappingURL=index.css.map */
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  background: rgb(255, 119, 95);
+}/*# sourceMappingURL=style.css.map */
