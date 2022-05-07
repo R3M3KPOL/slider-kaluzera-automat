@@ -1,6 +1,9 @@
-$width-container:100%;
-$elements-displayed:4;
-$elements-width: calc($width-container / $elements-displayed);
+:root{
+--width-container:100%;
+--elements-displayed:7;
+// --all-elements: 14;
+--elements-width: calc(var(--width-container) / var(--elements-displayed));
+--animation-duration: calc(var(--all-elements) * 4s);
 
-@warn #{$elements-width};
-@debug $elements-displayed
+}
+

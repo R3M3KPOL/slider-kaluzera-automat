@@ -1,26 +1,36 @@
 @use 'utils' as *;
 
 
-body{display: flex;
+body
+{display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     background: linear-gradient(to right, #fc466b, #3f5efb);
 }
 .container {
     display: flex;
     justify-content: center;
-    width: 100%;
-    background: linear-gradient(to left, #f58a9f, #899bf5);
+    width: var(--width-container);
+    background-image: linear-gradient(to top, #000000, #0f0f0f, #191819, #212122, #2a2a2b, #3c3c3d, #4f5050, #636464, #878888, #aeaeae, #d6d6d6, #ffffff);
+    overflow: hidden;
 }
 
 .figure{
-    display: grid;
-    grid-template-columns: repeat(14, 1fr);
-    grid-row: auto;
-    gap: rem(20);
-    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scrolling var(--animation-duration) linear infinite;
+    flex-shrink: 0;
+    @keyframes scrolling {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-1 *var(--elements-width) * var(--all-elements))); }
+    }
 &__item{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width:var(--elements-width);
 }
 }
+
